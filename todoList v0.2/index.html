@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <script type="module" src="./scripts/main.js" defer></script>
+    <title>Напоминания - TodoList</title>
+  </head>
+  <body>
+    <template id="todo__item-template">
+      <div class="todo__item">
+        <p class="todo__item-text"></p>
+        <button class="todo__item-button">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
+    </template>
+    <div class="todo__container">
+      <div class="todo__controls-row">
+        <input
+          class="todo__controls-text"
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Новое напоминание"
+        />
+        <input class="todo__controls-button" type="button" value="Добавить" />
+      </div>
+      <div class="todo__items-row">
+            <div style="display: none" class="todo__items-row-empty">Напоминаний нет</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
